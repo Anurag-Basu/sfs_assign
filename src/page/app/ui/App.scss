@@ -1,0 +1,34 @@
+.page-container {
+  .slick-dots-bottom {
+    li {
+      background-color: black;
+    }
+  }
+  .btn {
+    color: rgb(157, 150, 150);
+  }
+  .btn:hover {
+    color: white !important;
+  }
+}
+
+.ant-carousel .slick-slider .slick-track {
+  margin-top: 80px;
+}
+
+.ant-carousel .slick-slide img {
+  height: 85vh;
+  width: 100vw;
+}
+
+.ant-input {
+  width: 300px !important;
+  margin-left: 15px !important;
+}
+.ant-modal-content {
+  width: 400px !important;
+}
+ .ant-anchor .ant-anchor-link-title:only-child
+{
+  color: white;
+}

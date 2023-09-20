@@ -34,8 +34,8 @@ const FAQSection = () => {
 
   return (
     <div id="faq" className="py-20 text-white bg-gray-900">
-      <div className="container flex mx-auto">
-        <div className="w-1/2 pr-4">
+      <div className="flex mx-auto section-container">
+        <div className="pr-4 faq-container">
           <h2 className="justify-center mb-6 text-4xl font-semibold text-center">
             Frequently <br /> Asked Questions
           </h2>
@@ -43,7 +43,7 @@ const FAQSection = () => {
             Got a question? We've got the answers.
           </div>
         </div>
-        <div className="w-1/2 pl-4">
+        <div className="pl-4 faq-container">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <div className="mb-2 text-lg font-semibold text-white">

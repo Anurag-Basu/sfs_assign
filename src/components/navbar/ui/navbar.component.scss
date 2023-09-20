@@ -1,0 +1,23 @@
+
+
+@media (min-width: 320px) {
+  .anchor-menu-container {
+    display: none;
+  }
+  .login-logout-container{
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 600px) {
+  .anchor-menu-container {
+    display: flex;
+  }
+
+  .mobile-menu-container {
+    display: none;
+  }
+  .login-logout-container{
+    justify-content: flex-end;
+  }
+}

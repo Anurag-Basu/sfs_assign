@@ -10,6 +10,8 @@ import {
 import { imageSources } from "../../../../importImages";
 import { HomeProps } from "../../../../types";
 
+import "./home.component.scss";
+
 const contentStyle: React.CSSProperties = {
   height: "160px",
   color: "#fff",
@@ -33,7 +35,7 @@ const Home = ({
     <>
       <div className="page-body-container top-[50px]" id="home">
         <SignUp
-        handleSignUpForm={handleSignUpForm}
+          handleSignUpForm={handleSignUpForm}
           signUpForm={signUpForm}
           setIsModalOpen={setIsModalOpen}
           isModalOpen={isModalOpen}

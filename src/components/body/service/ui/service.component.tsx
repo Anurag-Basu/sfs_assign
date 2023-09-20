@@ -4,11 +4,11 @@ const { Title } = Typography;
 const Service = () => {
   return (
     <div id="service" className="p-20 parentContainer">
-      <div className="flex mb-4 about-content">
+      <div className="flex mb-4 section-container about-content">
         <div className="w-[50%] flex justify-center items-center">
           <Title level={1}>Our Services</Title>
         </div>
-        <div className="w-[50%]">
+        <div className="section-content-container">
           <Title level={3}>What We Offer</Title>
           <Typography className="text-justify">
             We offer a wide range of services to cater to your needs. From fast
@@ -20,12 +20,12 @@ const Service = () => {
           </Typography>
         </div>
       </div>
-      <div className="flex py-20 space-x-4">
-        <div className="flex flex-col items-center w-full max-w-[33%]">
+      <div className="flex py-20 space-x-4 direction-row">
+        <div className="flex flex-col items-center service-img">
           <img
             src="https://images.unsplash.com/photo-1634638024484-1b83581271bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
             alt="Feature"
-            className="w-full h-[500px]"
+            className="service-img h-[500px]"
           />
           <div className="flex items-center justify-between h-16">
             <Title level={5}>Fast Shipping</Title>
@@ -34,11 +34,11 @@ const Service = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-full max-w-[33%]">
+        <div className="flex flex-col items-center w-full service-img">
           <img
             src="https://images.unsplash.com/photo-1534073828943-f801091bb18c?ixlib=rb-4.0.3&ixid=M3xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3087&q=80"
             alt="Feature"
-            className="w-full h-[600px]"
+            className="service-img h-[600px]"
           />
           <div className="flex items-center justify-between h-16">
             <div className="w-[50%] text-xl">24/7 Customer Support</div>
@@ -47,11 +47,11 @@ const Service = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center w-full max-w-[33%]">
+        <div className="flex flex-col items-center service-img">
           <img
             src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=M3xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2865&q=80"
             alt="Feature"
-            className="w-full h-[400px]"
+            className="service-img h-[400px]"
           />
           <div className="flex items-center justify-between h-16">
             <Title level={5}>Easy Return</Title>

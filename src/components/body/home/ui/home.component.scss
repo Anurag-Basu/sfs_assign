@@ -1,0 +1,17 @@
+@media (min-width: 320px) {
+  .section-container {
+    flex-direction: column;
+  }
+  .section-content-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .section-container {
+    flex-direction: row;
+  }
+  .section-content-container {
+    width: 50%;
+  }
+}

@@ -1,7 +1,8 @@
 import { NavbarProps } from "../../../types";
-import Logo from "../../../assets/Logo.png";
 import { Anchor, Button } from "antd";
 import { User } from "react-feather";
+import "./navbar.component.scss";
+import { MobileMenu } from "../components";
 
 const Navbar = (props: NavbarProps) => {
   const {
@@ -45,20 +46,17 @@ const Navbar = (props: NavbarProps) => {
     <div
       className={`${
         isLogin ? "justify-between" : ""
-      } fixed top-0 mb-[80px] z-50 flex flex-row items-center w-full p-5 bg-blue-950`}
+      } fixed top-0 mb-[80px] z-50 flex navbar-parent-container flex-row items-center  p-5 bg-blue-950`}
     >
-      <div className="flex items-center">
-        <img src={Logo} alt="Logo" className="h-10 mr-2 w-30" />
-      </div>
       {!isLogin || !productView ? (
-        <div className="flex items-center justify-center flex-grow text-white">
+        <div className="flex items-center justify-center flex-grow text-white anchor-menu-container">
           <Anchor className="text-white" direction="horizontal" items={items} />
         </div>
       ) : (
         <></>
       )}
 
-      <div className="flex items-center justify-end">
+      <div className="flex items-center login-logout-container">
         {isLogin ? (
           <>
             <div className="flex items-center justify-center text-white">
@@ -97,6 +95,11 @@ const Navbar = (props: NavbarProps) => {
               SignUp
             </Button>
           </>
+        )}
+        {!productView && (
+          <div className="absolute mobile-menu-container right-8 ">
+            <MobileMenu items={items} />
+          </div>
         )}
       </div>
     </div>

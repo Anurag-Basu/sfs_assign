@@ -5,11 +5,11 @@ const { Title } = Typography;
 const About = () => {
   return (
     <div id="about" className="p-20 parentContainer">
-      <div className="flex mb-4 about-content">
+      <div className="flex mb-4 section-container about-content">
         <div className="w-[50%] flex justify-center items-center">
           <Title level={1}>About Us</Title>
         </div>
-        <div className="w-[50%]">
+        <div className="section-content-container">
           <Title level={3}>Great Products, Affordable Prices</Title>
           <Typography className="text-justify">
             At our E-Commerce store, we pride ourselves on offering a vast

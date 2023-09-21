@@ -1,27 +1,11 @@
-# React + TypeScript + Vite
+-Initially, when you land on a page, you can see the navbar, which allows you to navigate between multiple sections. On the right side, there are options available for signing in and signing up.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-After signing up or signing in, you can toggle between the homepage and the product list page. Upon signing in, the user's name, product list, and a logout button will appear in the navbar.
 
-Currently, two official plugins are available:
+-When you click on "Products," you can view all available products. In the product view, you can add a new product, search by category, filter by name, and toggle between card and table views.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-In the table view, you can perform CRUD (Create, Read, Update, Delete) operations on the products.
 
-## Expanding the ESLint configuration
+-After clicking the logout button, the user will be logged out, and the page will be redirected to the homepage.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+-I haven't been able to implement full responsive CSS for the entire page within one day.  
